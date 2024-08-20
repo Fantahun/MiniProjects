@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:Poppins,Helvetica, sans-serif;
+     background-image: linear-gradient(to top, #02c69890 0%, rgba(3, 74, 121, 0.762) 90%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* styles for the container */
+.all-Container{
+    display: flex; 
+    flex-direction: column; 
+    height: 600px;
+    width: 450px;
+    
+}
+
+/* title part */
+.title{
+    font-size: 20px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: gold;
+}
+
+/* style for the top input holder and result display part */
+.input-and-result{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    color: #fff;
+    background-color:#162036;
+    height: 140px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    /* border: 1px solid rgba(255, 255, 255, 0.321); */
+    
+}
+
+/* top result output part */
+.result{
+    font-weight: 700;
+    margin-top: 10px 0;
+    color: gold;
+    font-size: 30px;
+}
+
+
+/* main caculator part as a container (digits and the whole buttons) */
+.calc-main{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    height: 500px;
+    background-color:#232e49;
+    border-radius: 5px;
+    
+}
+
+/* style for the buttons */
+.btn-input{
+    height: 60px;
+    font-size:30px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 3px 0 #b4a597;
+    cursor: pointer;
+    background-color: #e6e0e0;
+    color: #444b5a;
+    transition: .3s background-color ease-in-out;
+}
+
+/* style when the buttons are hovered */
+.btn-input:hover{
+    border: none;
+    background-color: #fff;
+    /* border: 1px solid rgba(255, 217, 0, 0.576); */
+}
+
+/* style for the buttons which are out of digits */
+.top, .right{
+    background-color: #637097;
+    color: #fff;
+    /* border: 1px solid rgba(255, 217, 0, 0.576); */
+}
+
+/* style for the buttons which are out of digits (hover) */
+
+.top:hover, .right:hover{
+    background-color: #f3716fc1;
+    color: #fff;
+    /* border: 2px solid #f3716fc1; */
+}
+
+/* = (equal button style) */
+#btn-equal{
+    background-color: #f3716fc1;
+}
+
+/* = (equal button hover style) */
+
+#btn-equal:hover{
+    background-color: #f3716f;
+    /* border: 2px solid #b4a597; */
+}
+
+/* developed by section at the end */
+.made-by{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.made-by span{
+    font-weight: 600;
+    color: #162036;
+    
+}
